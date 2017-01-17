@@ -45,3 +45,4 @@ app.get('/', (req,res) => {
     })
   });
 
+app.get('/api/dash', queryNasaApi)
