@@ -37,6 +37,7 @@ const queryNasaApi = () => {
 
 
 //begining route, will move.
+app.use('/', express.static(__dirname + '/../client'))
 
 app.get('/', (req,res) => {
     queryNasaApi().then(response => {

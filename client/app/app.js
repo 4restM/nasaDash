@@ -1,5 +1,6 @@
 angular.module('nasadash', [
   'nasadash.dash',
+  'nasadash.services',
   'ngRoute'
 ])
 
