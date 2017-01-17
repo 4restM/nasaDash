@@ -1,5 +1,9 @@
 <div id='container' ng-controller='DashController'>
+  <div id='clock' ng-controller='TimeCtrl'>
+    <p>{{ clock | date:'medium'}}</p>
+  </div>
 
+  
   <!-- <ul>
     <li class='link' ng-repeat='link in data.links | filter:query | orderBy: "-visits"'>
       <img src='../../assets/redirect_icon.png'/>
