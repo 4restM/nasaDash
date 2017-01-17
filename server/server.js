@@ -4,6 +4,7 @@ const chalk = require('chalk');
 const Promise = require('bluebird');
 const https = require('https');
 
+// require('./routes/routes.js')(app, express);
 
 const app = express();
 
@@ -43,3 +44,4 @@ app.get('/', (req,res) => {
       res.end(response);
     })
   });
+
