@@ -1,12 +1,16 @@
+console.log('dash controller has been entered');
 angular.module('nasadash.dash', [])
 
 .controller('DashController', function($scope, Dash) {
   $scope.url = '';
-  Dash.getUrl().then(function(data){
-    $scope.url = JSON.stringify(data);
-    console.log('This is the unstringified data recieved from DashController', data)
-  })
-
+  var intitialize = function () {
+    console.log('This is the unstringified data recieved from DashController')
+    Dash.getUrl().then(function(data){
+      $scope.url = JSON.stringify(data);
+      console.log('This is the unstringified data recieved from DashController', data)
+    })
+  }
+  intitialize();
 })
 
 .controller('timeController', function($scope, $timeout){
